@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity">
+<Space
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/_100sdp"/>
+<ImageView
+    android:id="@+id/iv_logo"
+    android:layout_width="@dimen/_200sdp"
+    android:layout_height="@dimen/_120sdp"
+    android:layout_marginBottom="@dimen/_70sdp"
+    android:src="@drawable/logo"/>
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_100sdp"/>
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/outerCardView"
+        android:layout_width="@dimen/_240sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_margin="@dimen/_10sdp"
+        app:cardBackgroundColor="#1a9fe4"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="#1a9fe4">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/innerCardView"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:cardBackgroundColor="#f5ba0f"
+            app:cardCornerRadius="@dimen/_20sdp"
+            app:strokeColor="#50a2f1"
+            app:strokeWidth="0dp" />
+
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

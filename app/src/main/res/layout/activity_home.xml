@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+        <LinearLayout
+            android:id="@+id/ll_home"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/ll_home2"
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_100sdp" />
+
+                <ImageView
+                    android:id="@+id/iv_logo"
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginBottom="@dimen/_70sdp"
+                    android:src="@drawable/logo" />
+
+
+                <ImageView
+                    android:id="@+id/iv_play"
+                    android:layout_width="@dimen/_125sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/play" />
+
+                <ImageView
+                    android:id="@+id/iv_menu"
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:src="@drawable/menu" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
